@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    margin: 0;
+    background-image: url("cloud.jpg"); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-color: #f0f0f0; 
+    display: flex; 
+    flex-direction: column; /* Arrange content from top to bottom */
+    align-items: left; /* Center content horizontally */
+    justify-content: flex-start; /* Start from the top of the page */
+    height: 100vh;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px; 
+}
+
+.dropdown select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    animation: fadeEffect 0.3s ease;
+    color: white; 
+    background-color: #3498db; 
+}
+
+.dropdown select option {
+    color: black; 
+}
+
+.sections {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.sections ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sections li {
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sections li a {
+    text-decoration: none;
+    color:black; 
+    font-weight: bold;
+    display: block;
+    padding: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease; 
+}
+
+.sections li:hover {
+    background-color: #f9f9f9;
+}
+
+.sections li:hover a {
+    background-color: #f9f9f9;
+    transform: translateY(-3px); 
+    color: red; 
+}
+
+.sections li:active a {
+    transform: translateY(0); 
+}
+
+img {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px; 
+}
+</style>
+</head>
+<body>
+<div>
+    <img src="https://sraap.in/acb/h1.png">
+</div>
+<div class="dropdown">
+    <select class="dropdown-toggle">
+        <option value="" disabled selected>Timetable</option>
+        <option value="CSE">CSE-2nd yr</option>
+        <option value="CSE-AIML">CSE-AIML-2nd yr</option>
+        <option value="EEE">EEE-2nd yr</option>
+        <option value="ECE">ECE-2nd yr</option>
+        <option value="CE">Civil-2nd yr</option>
+        <option value="ME">Mechanical-2nd yr</option>
+    </select>
+</div>
+<div class="sections" data-value="CSE">
+    <h3>Sections:</h3>
+    <ul>
+        <li><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-A.html">2-CSE-A</a></li>
+        <li><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-B.html">2-CSE-B</a></li>
+	<li><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-D.html">2-CSE-D</a></li>
+                    <li><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-E.html">2-CSE-E</a></li>
+                    <li><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-F.html">2-CSE-F</a></li>
+                    <li><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-G.html">2-CSE-G</a></li>
+                    <li><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-H.html">2-CSE-H</a></li>
+                    <li><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-I.html">2-CSE-I</a></li>
+                    <li><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-J.html">2-CSE-J</a></li>
+                    <li><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-K.html">2-CSE-K</a></li>
+                    <li><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-L.html">2-CSE-L</a></li>
+                    <li><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-M.html">2-CSE-M</a></li>
+                    <li><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-N.html">2-CSE-N</a></li>
+                    <li><a href="http://sru.42web.io/wp-content/uploads/2023/08/2-CSE-O.html">2-CSE-O</a></li>
+		  <li><a href="http://sru.42web.io/wp-content/uploads/2023/08/2-CSE-DSCS.html">2-CSE-DSCS</a></li>
+    </ul>
+</div>
+
+<div class="sections" data-value="CSE-AIML">
+    <h3>Sections:</h3>
+    <ul>
+       <li><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-AIML-A-1.html">2-CSE-AIML-A</a></li>
+                    <li><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-AIML-B.html">2-CSE-AIML-B</a></li>
+                    <li><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-AIML-C.html">2-CSE-AIML-C</a></li>
+                    <li><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-AIML-D.html">2-CSE-AIML-D</a></li>
+    </ul>
+</div>
+<div class="sections" data-value="EEE">
+    <h3>Sections:</h3>
+    <ul>
+        <li><a href="timetable_eee_sectionA.html">Section A</a></li>
+        <li><a href="timetable_eee_sectionB.html">Section B</a></li>
+        <!-- Add more list items as needed -->
+    </ul>
+</div>
+
+<div class="sections" data-value="ECE">
+    <h3>Sections:</h3>
+    <ul>
+        <li><a href="timetable_eee_sectionA.html">Section A</a></li>
+        <li><a href="timetable_eee_sectionB.html">Section B</a></li>
+        <!-- Add more list items as needed -->
+    </ul>
+</div>
+
+<div class="sections" data-value="CE">
+    <h3>Sections:</h3>
+    <ul>
+        <li><a href="timetable_eee_sectionA.html">Section A</a></li>
+        <li><a href="timetable_eee_sectionB.html">Section B</a></li>
+        <!-- Add more list items as needed -->
+    </ul>
+</div>
+
+<div class="sections" data-value="ME">
+    <h3>Sections:</h3>
+    <ul>
+        <li><a href="timetable_eee_sectionA.html">Section A</a></li>
+        <li><a href="timetable_eee_sectionB.html">Section B</a></li>
+        <!-- Add more list items as needed -->
+    </ul>
+</div>
+<script>
+document.querySelector('.dropdown-toggle').addEventListener('change', function() {
+    const selectedValue = this.value;
+    const sections = document.querySelectorAll('.sections');
+
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+
+    const selectedSection = document.querySelector(`.sections[data-value="${selectedValue}"]`);
+    if (selectedSection) {
+        selectedSection.style.display = 'block';
+    }
+});
+</script>
+
+</body>
+</html>
